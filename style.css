@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&family=Roboto:wght@700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #201b2c;
+}
+
+.main_container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_login{
+    width: 50vw;
+    height: 100vh;
+    /* border: 1px solid green; */
+    color: #77ffc0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left_login > h1{
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    
+    font-size: 3vw;
+}
+
+.left_login > img{
+    width: 35vw;
+}
+
+
+.rigth_login{
+    width: 50vw;
+    height: 100vh;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_container{
+    width: 60%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid orange; */
+    background: #2f2841;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    
+}
+
+.card_container > h1{
+    margin-bottom: 50px;
+    color: #00ff88;
+    font-weight: 800;
+    letter-spacing: 4px;
+    
+}
+
+.card_container > button {
+    width: 100%;
+    background-color: #00ff88;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+    outline: none;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    box-shadow:  0px 10px 30px #00ff8052;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+
+.text_field{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    margin: 10px 0px;
+
+    
+}
+
+.text_field > input{
+    padding: 15px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    color: #f0ffffde;
+    background: #514869;
+    border: none;
+    font-size: 12pt;
+    
+}
+
+.text_field > label{
+    margin-bottom: 8px;
+    color: #f0ffffde;
+}
+
+.text_field > input::placeholder{
+    color: #f0ffff94;
+}
+
+
+@media only screen and (max-width: 426px){
+    .main_container{
+        
+        flex-direction: column;
+    }
+
+    .left_login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left_login > h1{
+        display: none;
+    }
+
+    .left_login > img{
+        width: 45vw;
+    }
+
+    .rigth_login{
+        width: 100%;
+    }
+
+    .card_container{
+        width: 90%;
+        height: auto;
+    }
+
+    
+    
+}
+
+
+
+
